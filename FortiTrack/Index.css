@@ -614,4 +614,11 @@ header {
         width: 100%;
         padding: 15px;
     }
+    .contact-form h3,  .input-group label {
+       font-size: 14px;
+    }
+    .contact-form p {
+        font-size: 12px;
+    }
+  
 }
