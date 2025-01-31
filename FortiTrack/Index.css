@@ -334,6 +334,11 @@ header {
 
 
 /* Large screens (1400px and above) */
+@media screen and (min-width: 768px) {
+    .hero-wrapper {
+        height: 100vh; 
+    }
+}
 @media (min-width: 1400px) {
     .hero-content h1 {
         font-size: 2.8rem;
@@ -390,7 +395,7 @@ header {
     .hero-wrapper {
         flex-direction: column;
         text-align: center;
-        height: 100vh;
+        height: 85vh;
         justify-content: center;
         padding-top: 30%;
         padding-inline: 3px;
@@ -588,6 +593,7 @@ header {
     font-size: 1.1em;
 }
 }
+
 
 
 /* FOOTER SECTION*/
