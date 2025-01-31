@@ -395,7 +395,7 @@ header {
     .hero-wrapper {
         flex-direction: column;
         text-align: center;
-        height: 75vh;
+        height: 80vh;
         justify-content: center;
         padding-top: 30%;
         padding-inline: 3px;
