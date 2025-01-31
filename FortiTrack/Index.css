@@ -528,6 +528,11 @@ header {
         flex-direction: column;
     }
 }
+@media screen and (min-width: 712px) {
+    .pg-text{
+        width: 344px;
+    }
+}
 
 
 
