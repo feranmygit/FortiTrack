@@ -217,7 +217,27 @@ header {
         display: none;
     }
 }
+@media screen and (min-width: 1400px) {
+    .logo img {
+        height: 120px;
+    }
+    .nav-links ul li a, .btn, .contact-form h3, .input-group label {
+        font-size: 25px;
+    }
 
+    .btn {
+        padding: 20px 25px;
+    }
+    .btn-nav {
+        border-radius: 35px;
+    }
+    .hero-wrapper img {
+        width: 130%;
+}
+.img-laptop {
+    margin-right: 10%;
+}
+}
 
 
 
@@ -246,7 +266,7 @@ header {
     animation: slideInLeft 1s ease-in-out;
 }
 
-.hero-content h1 {
+/* .hero-content h1 {
     font-size: 2.2rem;
     font-weight: bold;
     color: var(--bg-color);
@@ -256,7 +276,21 @@ header {
     font-size: 16px;
     margin: 10px 0;
     line-height: 1.7;
+} */
+.hero-content h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem); /* Scales between 1.8rem and 3rem */
+    font-weight: bold;
+    color: var(--bg-color);
+    line-height: 1.3;
 }
+
+/* Responsive paragraph text */
+.hero-content p {
+    font-size: clamp(14px, 1.5vw, 18px); /* Scales between 14px and 18px */
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
 
 .hero-content .italic-letter {
     color: var(--secondary-color);
@@ -274,7 +308,6 @@ header {
 
 /* HERO IMAGE */
 .hero-wrapper img {
-    max-width: 100%;
     opacity: 0;
     transform: translateX(50px);
     animation: slideInRight 1s ease-out forwards;
@@ -290,6 +323,68 @@ header {
 
 
 /* RESPONSIVE DESIGN */
+/* @media (max-width: 926px) {
+    .hero-content h1 {
+        font-size: 1.3rem;
+    }
+    .hero-content p {
+        font-size: 12px;
+    }
+} */
+
+
+/* Large screens (1400px and above) */
+@media (min-width: 1400px) {
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+        width: 573px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .hero-wrapper {
+        padding-inline-start: 15%;
+        padding-inline-end: 10%;
+    }    
+}
+
+/* Medium screens (1024px - 1399px) */
+@media (max-width: 1399px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1114px) {
+    /* .hero-content h1 {
+        font-size: 2rem;
+    } */
+    .img-laptop {
+        max-width: 50%; 
+    }
+    .img-laptop img{
+        max-width: 100%; 
+    }
+}
+
+/* Tablet screens (768px - 1023px) */
+@media (max-width: 1023px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .hero-content p {
+        font-size: 15px;
+    }
+}
 
 @media (max-width: 768px) {
     .hero-wrapper {
@@ -319,35 +414,14 @@ header {
     }
 }
 
-@media (max-width: 1114px) {
+/* Mobile screens (below 768px) */
+@media (max-width: 767px) {
     .hero-content h1 {
-        font-size: 2rem;
-    }
-    .img-laptop {
-        max-width: 50%; 
-    }
-    .img-laptop img{
-        max-width: 100%; 
-    }
-}
-@media (max-width: 926px) {
-    .hero-content h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .hero-content p {
-        font-size: 12px;
+        font-size: 14px;
     }
-}
-@media (min-width: 1400px) {
-    .hero-content p{
-        width: 573px;
-    }
-}
-@media (min-width: 1600px) {
-    .hero-wrapper {
-        padding-inline-start: 15%;
-        padding-inline-end: 10%;
-    }    
 }
 
 
@@ -503,6 +577,17 @@ header {
         margin-block: 60px;
     }
 }
+@media screen and (min-width: 1400px) {
+.key h2 {
+   font-size: 3rem;
+}
+.Assets-key h4{
+    font-size: 1.5em;
+}
+.Assets-key p, .pg-text, .footer-right > ul > a{
+    font-size: 1.1em;
+}
+}
 
 
 /* FOOTER SECTION*/
@@ -514,7 +599,6 @@ header {
 }
 .pg-text{
     line-height: 25px;
-    font-size: 13.5px;
     margin-top: 10px;
 }
 .footer-right{
@@ -527,7 +611,6 @@ header {
 .footer-right > ul > a{
     text-decoration: none;
     color: var(--bg-color);
-    font-size: 13.5px;
 }
 .footer-right > ul > a:hover{
     color: var(--btn-bg-color);
@@ -544,10 +627,27 @@ header {
         flex-direction: column;
     }
 }
+@media screen and (max-width: 1400px) {
+    .pg-text, .footer-right > ul > a{
+        font-size: 13.5px;
+    }
+}
 @media screen and (min-width: 712px) {
     .pg-text{
         width: 344px;
     }
+}
+@media screen and (min-width: 1400px) {
+    .pg-text{
+        width: 444px;
+    }
+    .footer-right h3{
+       font-size: 1.5rem;
+    }
+    .contact-form p, .submit-btn  {
+        font-size: 1.2rem;
+    }    
+      
 }
 
 
