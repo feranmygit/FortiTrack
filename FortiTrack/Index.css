@@ -232,12 +232,14 @@ header {
     justify-content: space-between; 
     height: 100vh; 
     width: 100%; 
+    padding-inline-start: 10%;
     padding-inline-end: 5%;
     margin-top: -5%;
     box-sizing: border-box; 
 }
 
 /* HERO CONTENT */
+
 .hero-content {
     flex: 1; 
     max-width: 50%; 
