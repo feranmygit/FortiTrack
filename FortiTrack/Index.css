@@ -230,8 +230,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline-start: 115px;
-    padding-inline-end: 40px;
+    padding-inline-start: 10%;
+    padding-inline-end: 5%;
     background-color: var(--text-color);
     overflow: hidden;
     position: relative;
@@ -322,6 +322,18 @@ header {
         font-size: 12px;
     }
 }
+@media (min-width: 1400px) {
+    .hero-content p{
+        width: 573px;
+    }
+}
+@media (min-width: 1600px) {
+    .hero-wrapper {
+        padding-inline-start: 15%;
+        padding-inline-end: 10%;
+    }    
+}
+
 
 /* ANIMATIONS */
 @keyframes slideInLeft {
