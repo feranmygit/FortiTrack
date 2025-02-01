@@ -249,7 +249,7 @@ header {
 
 /* HERO SECTION */
 .main{
-    margin-top: 104px;
+    margin-top: 77px;
 }
 .hero-wrapper {
     display: flex;
@@ -402,7 +402,7 @@ header {
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        padding-top: 30%;
+        padding-top: 27%;
         padding-inline: 3px;
     }
 
