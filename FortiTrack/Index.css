@@ -22,6 +22,13 @@ body {
     background: var(--bg-color);
 }
 
+.page-active{
+    color: #0E2B4E;
+}
+.page-inactive{
+    color: var(--text-color);
+}
+
 /* HEADER STYLING */
 header {
     display: flex;
@@ -43,10 +50,6 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-.logo img:hover {
-    transform: scale(1.1);
-}
-
 /* Navigation */
 .nav-links ul {
     display: flex;
@@ -59,7 +62,6 @@ header {
 
 .nav-links ul li a {
     text-decoration: none;
-    color: var(--text-color);
     font-size: 16px;
     font-weight: 700;
     transition: color 0.3s ease-in-out;
@@ -763,4 +765,93 @@ header {
         font-size: 12px;
     }
   
+}
+
+
+/* ABOUT US SECTION */
+.hero-wrapper-About{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 65vh; 
+    width: 100%; 
+    /* background-image: url(./Assets/queue-management_2-fotor-20250129145513\ 1.svg); */
+    box-sizing: border-box; 
+    text-align: center;
+}
+.about-one{ 
+    background: url('./Assets/left.svg') left center no-repeat, 
+                url('./Assets/right.svg') right center no-repeat;
+    background-color: #022042;
+}
+.about-two{
+    background: var(--text-color);
+}
+.about-three{
+    background: #F8F8F8;
+}
+.hero-content-About{
+    animation: slideInTop 1s ease-in-out;
+    padding-inline: 20%;
+}
+.hero-content-About h1{
+   color: #E29443;
+   font-size: clamp(1.6rem, 4vw, 1.8rem); 
+   font-weight: bold;
+}
+
+.hero-content-About p{
+   color: #FFFFFF;
+   font-size: clamp(12px, 1.5vw, 16px); 
+   margin: 15px 0;
+   line-height: 1.7;
+}
+.hero-content-About .letter-p{
+   color: #FFFFFF;
+}
+.hero-content-About .letter-p3{
+   color: #02264B;
+}
+.header-buttons-About {
+    margin-top: 25px;
+}
+.header-buttons-About .secondary{
+    margin-right: 20px;
+}
+
+
+/* ANIMATIONS */
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 712px) {
+    .about-one{ 
+        background: url('./Assets/left.svg') center no-repeat;
+        background-color: #022042;
+    }
+    .hero-content-About {
+        padding-inline: 10%;
+    }
+    .hero-content-About h1 {
+        font-size: 1.3rem;
+    }
 }
