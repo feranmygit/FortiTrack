@@ -404,7 +404,7 @@ header {
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        padding-top: 27%;
+        padding-top: 15%;
         padding-inline: 3px;
     }
 
@@ -429,15 +429,18 @@ header {
 /* Mobile screens (below 768px) */
 @media (max-width: 767px) {
     .hero-content h1 {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
     }
     .hero-content p {
         font-size: 14px;
     }
 }
-@media (max-width: 568px) {
+@media (max-width: 480px) {
     .hero-wrapper {
-         height: 80vh;
+         height: 92vh;
+}
+.hero-wrapper {
+    padding-top: 38%;
 }
 }
 
