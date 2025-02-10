@@ -274,19 +274,9 @@ header {
     animation: slideInLeft 1s ease-in-out;
 }
 
-/* .hero-content h1 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: var(--bg-color);
-    line-height: 1.3;
-}
-.hero-content p{
-    font-size: 16px;
-    margin: 10px 0;
-    line-height: 1.7;
-} */
+
 .hero-content h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem); /* Scales between 1.8rem and 3rem */
+    font-size: clamp(1.8rem, 4vw, 3rem); 
     font-weight: bold;
     color: var(--bg-color);
     line-height: 1.3;
@@ -294,7 +284,7 @@ header {
 
 /* Responsive paragraph text */
 .hero-content p {
-    font-size: clamp(14px, 1.5vw, 18px); /* Scales between 14px and 18px */
+    font-size: clamp(14px, 1.5vw, 18px); 
     margin: 10px 0;
     line-height: 1.7;
 }
@@ -328,17 +318,6 @@ header {
 .img-laptop:hover {
     transform: scale(1.1);
 }
-
-
-/* RESPONSIVE DESIGN */
-/* @media (max-width: 926px) {
-    .hero-content h1 {
-        font-size: 1.3rem;
-    }
-    .hero-content p {
-        font-size: 12px;
-    }
-} */
 
 
 /* Large screens (1400px and above) */
@@ -378,9 +357,6 @@ header {
 }
 
 @media (max-width: 1114px) {
-    /* .hero-content h1 {
-        font-size: 2rem;
-    } */
     .img-laptop {
         max-width: 50%; 
     }
@@ -778,7 +754,6 @@ header {
     justify-content: center; 
     height: 65vh; 
     width: 100%; 
-    /* background-image: url(./Assets/queue-management_2-fotor-20250129145513\ 1.svg); */
     box-sizing: border-box; 
     text-align: center;
 }
